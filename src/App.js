@@ -193,7 +193,7 @@ function App() {
              
               <li>
                 <a class="nav-link scrollto" href="#about">
-                  About1
+                  About
                 </a>
               </li>
            
