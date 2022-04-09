@@ -628,21 +628,33 @@ function App() {
 
         <ul>
               <li>
-                <a class="nav-link scrollto active" href="#hero">
-                  Home
+                <a class="nav-link scrollto active">
+                Contact Us
                 </a>
               </li>
              
               <li>
-                <a class="nav-link scrollto" href="#about">
-                  About
+                <a class="nav-link scrollto" >
+                White Paper
                 </a>
               </li>
            
              
               <li>
-                <a class="nav-link scrollto" href="#team">
-                  Team
+                <a class="nav-link scrollto">
+                Discord
+                </a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" >
+                FORUM
+                </a>
+              </li>
+           
+             
+              <li>
+                <a class="nav-link scrollto">
+                Lorem Ipsum
                 </a>
               </li>
 

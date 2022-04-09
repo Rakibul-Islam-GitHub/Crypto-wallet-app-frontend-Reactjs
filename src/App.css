@@ -1,47 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/**
-* Template Name: Rapid - v4.7.1
-* Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -50,6 +6,14 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  width: 101%;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -114,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -122,13 +87,19 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
+  width: 100%;
+  margin-right: 0%;
 }
 #header.header-transparent {
   background: transparent;
+  width: 100%;
+  
 }
 #header.header-scrolled {
   background: #10243E;
   height: 70px;
+  width: 100%;
+ 
   /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); */
 }
 #header .logo {
@@ -362,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   position: relative;
   /* background-image: linear-gradient(red, yellow); */
   background: #f5f8fd url("./assets/img/background1.png") center top no-repeat;
@@ -1114,7 +1085,7 @@ background-image: linear-gradient(0deg, #000000 0%, #10243e 100%); */
 
 .clients1 .img-fluid{
   width: 40vh;
-  height: 10vh;
+  height: 6vh;
 }
 
 .clients1 .client-img{
