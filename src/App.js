@@ -236,6 +236,7 @@ function App() {
             class="row justify-content-center align-self-center"
             data-aos="fade-up"
           >
+           
             <div
               class="col-lg-6 intro-info order-lg-first order-last"
               data-aos="zoom-in"
@@ -256,7 +257,7 @@ function App() {
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
           </div> */}
             </div>
-
+          
             <div
               class="col-lg-6 intro-img order-lg-last order-first"
               data-aos="zoom-out"
@@ -268,7 +269,19 @@ function App() {
                 class="img-fluid"
               />
             </div>
+
           </div>
+          {/* <div
+              class="intro-img2"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img
+                src={require("./assets/img/main-intro.png")}
+                alt=""
+                // class="img-fluid"
+              />
+            </div> */}
         </div>
       </section>
       {/* <!-- End Hero --> */}
@@ -611,6 +624,31 @@ function App() {
 
         {/* <!-- ======= Footer ======= --> */}
         <footer id="footer" class="section-bg">
+          <div class='footer2-links'>
+
+        <ul>
+              <li>
+                <a class="nav-link scrollto active" href="#hero">
+                  Home
+                </a>
+              </li>
+             
+              <li>
+                <a class="nav-link scrollto" href="#about">
+                  About
+                </a>
+              </li>
+           
+             
+              <li>
+                <a class="nav-link scrollto" href="#team">
+                  Team
+                </a>
+              </li>
+
+            
+            </ul>
+          </div>
           <div class="row footer2">
             <div class="col-lg-3 col-md-6 footer-social-links text-center">
               <a href="#" class="twitter">
