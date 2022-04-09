@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer id="footer" className="section-bg">
-          <div class='footer2-links'>
+          <div className='footer2-links'>
 
         <ul>
               <li>

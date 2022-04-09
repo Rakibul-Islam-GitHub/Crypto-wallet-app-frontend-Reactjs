@@ -6,8 +6,8 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
-  /* width: 101%;
-  margin: 0 auto; */
+  /* width: 101%; */
+  /* margin: 0 auto; */
   -ms-overflow-style: none; 
   scrollbar-width: none;  
 }
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 24px;
+  /* padding: 10px 0 10px 24px; */
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -184,7 +184,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #1bb1dc;
+  color: #10243E;
+  background-color: #fff;
+  border-radius: 5px;
 }
 .navbar .dropdown ul {
   display: block;
@@ -334,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   position: relative;
   /* background-image: linear-gradient(red, yellow); */
   background: #f5f8fd url("./assets/img/background1.png") center top no-repeat;
@@ -378,9 +380,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
 }
-#hero .intro-info h2 span {
-  color: #1bb1dc;
-}
 #hero .intro-info p {
   color: #fff;
 }
@@ -390,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
 }
-#hero .intro-info .btn-get-started, #hero .intro-info .btn-services {
+#hero .intro-info #hero .intro-info .btn-services {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -405,12 +404,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+#hero .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  transition: 0.5s;
+  color: #10243E;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
 #hero h2 {
   color: #fff;
 }
 
-#hero .intro-info .btn-get-started:hover, #hero .intro-info .btn-services:hover {
+#hero .curvespan{
+  display: inline-grid;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+#hero .curvespan img{
+  width: 20vh;
+  
+}
+
+#hero .intro-info #hero .intro-info .btn-services:hover {
   background: #0a98c0;
+}
+
+
+#hero .btn-get-started:hover {
+  background: #2b4f7d;
 }
 
 /*--------------------------------------------------------------
@@ -1560,7 +1589,7 @@ background-image: linear-gradient(0deg, #000000 0%, #10243e 100%); */
   display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 24px;
+    /* padding: 10px 0 10px 24px; */
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
@@ -1570,5 +1599,15 @@ background-image: linear-gradient(0deg, #000000 0%, #10243e 100%); */
     transition: 0.3s;
 }
 .footer2-links ul a:hover {
-  color: #1bb1dc;
+  color: #10243E;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .footer2-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
