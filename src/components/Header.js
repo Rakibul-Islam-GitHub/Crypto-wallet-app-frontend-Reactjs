@@ -1,10 +1,8 @@
-import React, {useEffect} from 'react'
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, Link } from "react-router-dom";
 
 function Header() {
   useEffect(() => {
-  
-
     /**
      * Easy selector helper function
      */
@@ -169,68 +167,51 @@ function Header() {
       }
     });
   }, []);
- 
+
   return (
     <header
-    id="header"
-    className="fixed-top d-flex align-items-center header-transparent"
-  >
-    <div className="container d-flex align-items-center">
-      <h1 className="logo me-auto">
-      <Link to="/">Bitx</Link>
-        {/* <a href="index.html">Bitx</a> */}
-      </h1>
+      id="header"
+      className="fixed-top d-flex align-items-center header-transparent"
+    >
+      <div className=" d-flex align-items-center header-div">
+        <h1 className="logo me-auto">
+          <NavLink exact to="/">
+            Bitx
+          </NavLink>
+        </h1>
 
-      {/* <a href="index.html" className="logo me-auto"><img src={require("../assets/img/logo.png")} alt="" className="img-fluid"/></a> */}
-
-      <nav id="navbar" className="navbar order-last order-lg-0">
-        <ul>
-          <li>
-          <Link to="/" className="nav-link scrollto">Dashboard</Link>
-            {/* <a className="nav-link scrollto active" href="#hero">
-              Home
-            </a> */}
-          </li>
-         
-          {/* <li>
-            
-            <a className="nav-link scrollto" href="#about">
-              About
-            </a>
-          </li> */}
-       
-         
-          <li>
-          <Link to="/team" className="nav-link scrollto">Team</Link>
-            {/* <a className="nav-link scrollto" href="#team">
-              Team
-            </a> */}
-          </li>
-
-        
-        </ul>
-        <i className="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      {/* <!-- .navbar --> */}
-
-      <div className="social-links">
-        <a href="#" className="twitter">
-          <i className="bi bi-twitter"></i>
-        </a>
-        <a href="#" className="facebook">
-          <i className="bi bi-facebook"></i>
-        </a>
-        <a href="#" className="linkedin">
-          <i className="bi bi-linkedin"></i>
-        </a>
-        <a href="#" className="instagram">
-          <i className="bi bi-instagram"></i>
-        </a>
+        <nav id="navbar" className="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <Link
+                activeClassName="active"
+                to="/team"
+                className="nav-link scrollto"
+              >
+                Team
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="nav-link scrollto">
+                Documentation
+              </Link>
+            </li>
+            <li>
+              <NavLink
+                exact
+                activeClassName="active"
+                to="/"
+                className="nav-link scrollto"
+              >
+                Dashboard
+              </NavLink>
+            </li>
+          </ul>
+          <i className="bi bi-list mobile-nav-toggle"></i>
+        </nav>
       </div>
-    </div>
-  </header>
-
-  )
+    </header>
+  );
 }
 
-export default Header
+export default Header;

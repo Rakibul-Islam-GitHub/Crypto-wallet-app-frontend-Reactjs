@@ -244,45 +244,7 @@ function Home() {
       <main id="main">
         {/* <!-- ======= About Section ======= --> */}
         <section id="about" className="about">
-          <div className="container">
-            <div
-              className="row counters clients1"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="col-lg-3 col-md-6 text-center client-img">
-                <img
-                  src={require("../assets/img/clients/client-1.png")}
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-
-              <div className="col-lg-3 col-md-6 text-center client-img">
-                <img
-                  src={require("../assets/img/clients/client-2.png")}
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-
-              <div className="col-lg-3 col-md-6 text-center client-img">
-                <img
-                  src={require("../assets/img/clients/client-3.png")}
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-
-              <div className="col-lg-3 col-md-6 text-center client-img">
-                <img
-                  src={require("../assets/img/clients/client-4.png")}
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+          
           <div className="container" data-aos="fade-up">
             <div className="row">
               <div className="col-lg-5 col-md-6">
