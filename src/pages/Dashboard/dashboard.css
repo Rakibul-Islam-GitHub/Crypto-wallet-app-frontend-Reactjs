@@ -1,0 +1,60 @@
+.header-container{
+    display: inline-block;
+}
+.dashboard-main{
+    height:200vh;
+    overflow-x: hidden !important;
+  color: black;
+  margin-top: 66px;
+  display:flex;
+  background-color:rgba(238, 231, 231, 0.921);
+    
+}
+.sidebar{
+   
+    background-color: rgb(255, 255, 255);
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+
+}
+.sidebar-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidebar-items {
+    list-style: none;
+    margin-top: 15px;
+}
+ul.sidebar-items li {
+    padding: 10px;
+    /* border: 1px solid; */
+}
+.sidebar-items li a {
+   
+    border-radius: 7px;
+    color:rgb(16, 14, 14)!important;
+}
+.sidebar-items li a i{
+    margin-right: 4px;
+}
+.sidebar-items li a:hover{
+    color:white !important;
+    background-color:rgb(30, 80, 217);
+    
+}
+.dashboard-item{
+  flex:6;
+  
+}
+
+.account-section{
+   padding:20px;
+}
+.portfolio{
+    background-color: rgb(255, 255, 255);
+}
+
