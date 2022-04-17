@@ -33,6 +33,7 @@ const DashboardHeader = () => {
                     to="/dashboard"
                     className="nav-link scrollto"
                   >
+                      <img src="https://cdn-icons.flaticon.com/png/512/706/premium/706807.png?token=exp=1650104216~hmac=2d9b0e4934522a4a8efc692ae3805b3e" alt="" height='20px' width='20px' style={{marginRight:'5px'}}/>
                     Username
                   </NavLink>
                 </li>

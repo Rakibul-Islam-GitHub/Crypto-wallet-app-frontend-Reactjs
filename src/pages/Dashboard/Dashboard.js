@@ -250,10 +250,12 @@ const Dashboard = () => {
             </div>
             {/* wallet table end */}
 
-            <div className="bitx-platform col-md-11">
+
+            {/* bitx platform start */}
+            <div className="bitx-platform row col-md-11">
                 <p>BitX Platform</p>
 
-                <div className="bitx-platform-chart-container row">
+                
 
                     <div className="bitx-platform-chart col-md-7">
                         <div className="chart-header">
@@ -269,12 +271,158 @@ const Dashboard = () => {
 
                         pie chart
                     </div>
+                
+            </div>
+            {/* bitx platform end */}
+
+            {/* bitx platform 2nd row start */}
+            <div className="bitx-p-row2 row col-md-11">
+                <div className="bitx-p-row2-chart div-bc col-md-7">
+                    <div className="bitx-p-row2-chart-header">
+                        <img src={require('../../assets/img/dashboard/bluebar.png')} height="51px" alt="" />
+                        <h6 className="total-diposit">12,007,738,396  UST  <span className="total-diposit-monitor-green"> +5.13%</span><br/> <span className="t-d-b">Total Diposit</span> </h6> 
+                        
+
+                        <img src={require('../../assets/img/dashboard/blackbar.png')} height="51px" alt="" />
+                        <h6>12,007,738,396 UST  <span className="total-diposit-monitor-green"> +5.13%</span> <br/> <span className="t-d-b"> Total Borrow</span> </h6>
+                        
+                    </div>
+                    {/* to do : have to add double line chart */}
+                    <div className="bitx-p-row2-doublelinechart-wrapper mt-4">
+                        <Chart></Chart>
+                    </div>
                 </div>
+                <div className="bitx-p-row2-right div-bc col-md-4">
+                    <p className="pt-3 pb-0 mb-0 anc-buyback">ANC Buyback (72HR)</p>
+                    <div className=" d-flex flex-row ">
+                        <p className="anc me-4">118,321 <span className="ancust">ANC</span> </p>
+                        <p className="ust">318,867 <span className="ancust">UST</span></p>
+                    </div>
+                    <hr />
+
+                    <p className="pt-3 pb-0 mb-0 anc-buyback">ANC Buyback (Total)</p>
+                    <div className="anc-buybac-total d-flex flex-row">
+                    <p className="anc me-4">118,321 <span className="ancust">ANC</span></p>
+                        <p className="ust">318,867 <span className="ancust">UST</span></p>
+                    </div>
+                </div>
+            </div>
+
+            {/* stablecoin table start */}
+            <div className="stablecoin-table-container col-md-11 div-bc">
+            <table class="table">
+  <thead>
+    <tr>
+      
+      <th className="stc-head" >Stablecoin Market</th>
+      <th scope="col">Total Deposit</th>
+      <th scope="col">Deposit APY</th>
+      <th scope="col">Total Borrow</th>
+      <th scope="col">Borrow APR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td> <img src={require("../../assets/img/dashboard/ust.png")} alt="" /> data1</td>
+      <td>data2</td>
+      <td>data3</td>
+      <td>data4</td>
+      <td>data5</td>
+      
+    </tr>
+   
+  </tbody>
+</table>
+
+            </div>
+
+            {/* last chart start */}
+            <div className="last-chart-container col-md-11 mb-5 div-bc">
+            <div className="bitx-platform-chart">
+                        <div className="chart-header mb-2 ps-5 pt-4">
+                            <div className="chart-header-left">
+                                <h6>6,653,854,787<span className="chartspan"> UST</span> <span className="percentage-red">-5.13%</span> </h6>
+                                <p>Total Collateral Value</p>
+                            </div>
+
+                        </div>
+                    <Chart></Chart>
+                    </div>
+            </div>
+
+            {/* Collateral Market table start */}
+            <div className="collarate-market-table-container col-md-11 div-bc">
+
+            <table class="table">
+  <thead>
+    <tr>
+      
+      <th className="stc-head" >Collateral Market</th>
+      <th scope="col">Price</th>
+      <th scope="col">Total Collateral</th>
+      <th scope="col">Total Collateral Value</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>
+          <div className="d-flex flex-row">
+          <img className="me-2" src={require("../../assets/img/dashboard/bluna.png")} height="46" width="46"alt="" /> 
+      
+      <p>bLuna <br /> <span className="collarate-markt-span">Bonded Luna </span> </p>
+
+          </div>
+           
+      
+      </td>
+      <td>$12,006M</td>
+      <td>45.143M</td>
+      <td>$4,896.23M</td>
+    </tr>
+    
+    <tr>
+      <td>
+          <div className="d-flex flex-row">
+          <img className="me-2" src={require("../../assets/img/dashboard/beth.png")} height="46" width="46"alt="" /> 
+      
+      <p>bETH <br /> <span className="collarate-markt-span">Bonded bETH </span> </p>
+
+          </div>
+           
+      
+      </td>
+      <td>$12,006M</td>
+      <td>45.143M</td>
+      <td>$4,896.23M</td>
+    </tr>
+
+    <tr>
+      <td>
+          <div className="d-flex flex-row">
+          <img className="me-2" src={require("../../assets/img/dashboard/wasavax.png")} height="46" width="46"alt="" /> 
+      
+      <p>wasAVAX <br /> <span className="collarate-markt-span">BENQI Staked AVAX (Wormhole) </span> </p>
+
+          </div>
+           
+      
+      </td>
+      <td>$12,006M</td>
+      <td>45.143M</td>
+      <td>$4,896.23M</td>
+    </tr>
+   
+  </tbody>
+</table>
+
             </div>
           </div>
         </div>
 
-        <Footer />
+        <Footer  />
       </>
     );
 };

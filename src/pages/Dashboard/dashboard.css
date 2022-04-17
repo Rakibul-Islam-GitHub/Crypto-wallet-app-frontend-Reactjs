@@ -2,7 +2,7 @@
     display: inline-block;
 }
 .dashboard-main{
-    height:200vh;
+    min-height:200vh;
     overflow-x: hidden !important;
   color: black;
   margin-top: 66px;
@@ -49,6 +49,11 @@ ul.sidebar-items li {
 .dashboard-item{
   flex:6;
   
+}
+.div-bc{
+    background: #FFFFFF;
+box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+border-radius: 10px;
 }
 
 .account-section{
@@ -126,6 +131,7 @@ position: relative;
     border-radius: .5rem !important;
     margin-top: 5px;
     color:black !important;
+    padding-bottom: 20px;
     
 }
 .portfolio h5{
@@ -162,7 +168,7 @@ margin: 43px;
 /* bitx platform */
 
 .bitx-platform{
-    margin: 43px;
+    margin-left: 43px;
 }
 .bitx-platform p{
     padding:0;
@@ -179,7 +185,8 @@ color: #000000;
     background: #FFFFFF;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
-    margin-right: 15px;
+    margin-right: 28px;
+    padding-bottom: 20px;
     
 
 }
@@ -212,4 +219,110 @@ font-size: 20px !important;
 font-weight: 100;
 font-size: 12px;
 color: #514f4f;
+}
+
+/* bitx platform row2 */
+.bitx-p-row2{
+    margin: 43px;
+    
+}
+.bitx-p-row2-chart{
+    margin-right: 28px;
+}
+.bitx-p-row2-chart-header{
+    display: flex;
+    flex-direction: row;
+    padding:20px 0 0 20px;
+}
+.bitx-p-row2-chart-header img{
+    margin-right: 10px;
+    width: 13px;
+height: 51px;
+}
+.bitx-p-row2-chart-header h6{
+    margin-top:3px;
+}
+.total-diposit{
+    margin-right: 50px;
+}
+.total-diposit-monitor-green{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #17B294 !important;
+    
+}
+.t-d-b{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: #000000;
+    
+    opacity: 0.6;
+}
+.anc-buyback{
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 146% */
+color: #000000;
+opacity: 0.6;
+}
+.anc, .ust{
+    font-family: 'Manrope';
+    font-weight: 700;
+font-size: 21px;
+line-height: 18px;
+}
+.ancust{
+    font-weight: 500;
+font-size: 16px !important;
+}
+
+/* stablecoin table */
+.stc-head{
+    font-weight: 600;
+font-size: 16px !important;
+line-height: 18px;
+}
+.stablecoin-table-container{
+    padding: 10px;
+    margin-left: 43px !important;
+
+}
+
+/* last chart */
+.last-chart-container{
+    margin-left:43px;
+    margin-top: 40px;
+}
+.percentage-red{
+    font-weight: 600;
+font-size: 11.1429px;
+line-height: 15px;
+
+color: #D80000;
+}
+
+/* collarate-market-table-container */
+.collarate-market-table-container{
+    margin-left:43px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+
+.collarate-markt-span{
+    font-weight: 500;
+font-size: 11px;
+line-height: 18px;
+color: #000000;
+opacity: 0.6;
 }
