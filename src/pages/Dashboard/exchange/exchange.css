@@ -1,0 +1,188 @@
+.exchange-container{
+    flex:6;
+    padding:82px 0 0px 80px;
+}
+.exchange-container p{
+    font-weight: 800;
+font-size: 36px;
+line-height: 49px;
+}
+
+.btn-div{
+    width: 402px;
+height: 54px;
+background: #E8E8E8;
+border-radius: 10px;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.btn-mrkt{
+ width: 185px;
+ border: aliceblue;
+height: 40px;
+text-align: center;
+background: #FFFFFF;
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+border-radius: 6px;
+
+}
+.btn-lmt{
+    width: 182px;
+    border: aliceblue;
+height: 40px;
+background: #E8E8E8;
+border-radius: 6px;
+}
+.btn-div p{
+    font-weight: 700;
+font-size: 16px;
+margin: -5px 0 0 0 ;
+}
+
+/* exchange card body */
+.exchange-card-body{
+max-width: 709px;
+max-height: 718px;
+background: #FFFFFF;
+box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+border-radius: 10px;
+padding: 30px 50px;
+margin-top: 20px;
+}
+
+.from-card, .to-card{
+    width: 241px;
+height: 152px;
+background: linear-gradient(90deg, #EF8E19 0%, #F99823 100%);
+box-shadow: 0px 15px 44px rgba(239, 142, 25, 0.35);
+border-radius: 12px;
+}
+.from-card p, .to-card p{
+    display: block;
+}
+.coin-name p{
+font-weight: 700;
+font-size: 28px;
+line-height: 18px;
+color: #FFFFFF;
+margin-left:20px;
+}
+
+.fromcoin img{
+    background: #E28310;
+transform: rotate(15deg);
+border-radius: 50%;
+
+}
+.fromcoin, .to-coin{
+    padding-top:10px;
+    padding-right: 10px;
+    
+}
+.arrow{
+    margin-right: 14px;
+}
+.balance p, .value p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.balance{
+    margin: 0 25px 0 20px;
+}
+.balance span, .value span{
+    font-weight: 500;
+font-size: 13px;
+line-height: 18px;
+opacity: 0.7;
+}
+.from-to-p{
+    font-weight: 600;
+font-size: 17px !important;
+margin-bottom:0;
+margin-left: 3px;
+}
+
+.to-card{
+    background: linear-gradient(90deg, #22936F 0%, #1F9D78 100%);
+box-shadow: 0px 15px 44px rgba(37, 156, 119, 0.35);
+border-radius: 12px;
+}
+.to-coin img{
+    background: #188464;
+    border-radius: 38px;
+    transform: rotate(15deg);
+
+}
+.arror{
+    padding-top: 25px;
+}
+
+/* fee div */
+.fee-body{
+    margin-top:37px;
+}
+.fee-body p{
+    font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+color: #1565D8;
+}
+
+.fee-body h6{
+    color: #1565D8 !important;
+    width: 75px;
+height: 36px;
+background: #1566d83a;
+/* opacity: 0.14; */
+border-radius: 8px;
+font-weight: 800;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+
+}
+.coin-value-div{
+    margin-top: 25px;
+}
+.input-coin, .output-coin{
+    width: 241px;
+height: 70px;
+background: #FFFFFF;
+/* opacity: 0.3; */
+border: 2px solid rgba(0, 0, 0, 0.222);
+border-radius: 10px;
+}
+.value{
+    font-family: 'Manrope';
+    font-weight: 800;
+font-size: 28px;
+color: #000000 !important;
+margin-top: 7px;
+}
+
+/* connect wallet btn div */
+.connect-wallet-div{
+    display: flex;
+    justify-content: center;
+}
+.connect-wallet-div button{
+    width: 307px;
+height: 65px;
+background: #1565D8;
+border-radius: 12px;
+text-align: center;
+margin-top:55px;
+color: #fff;
+border: rgb(2, 22, 40);
+}
+.connect-wallet-div h6{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+color: #FFFFFF;
+}
