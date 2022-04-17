@@ -82,7 +82,7 @@ function Home() {
     };
 
     /**
-     * Toggle .header-scrolled class to #header when page is scrolled
+     * Toggle .header-scrolled class on #header when page is scrolled
      */
     let selectHeader = select("#header");
     if (selectHeader) {
@@ -98,7 +98,7 @@ function Home() {
     }
 
     /**
-     * Back to top button
+     * Back to top button visibility
      */
     let backtotop = select(".back-to-top");
     if (backtotop) {
@@ -110,7 +110,7 @@ function Home() {
         }
       };
       window.addEventListener("load", toggleBacktotop);
-      onscroll(document, toggleBacktotop);
+      onscroll(document, toggleBacktotop);  //document.scroll listnr
     }
 
     /**

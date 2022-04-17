@@ -39,7 +39,7 @@ const Chart = () => {
         <ResponsiveContainer width="98%" aspect={3}>
         <LineChart
           width={500}
-          height={300}
+          height={350}
           data={data}
           margin={{
             top: 15,

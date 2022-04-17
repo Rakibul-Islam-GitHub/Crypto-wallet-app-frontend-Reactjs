@@ -199,8 +199,8 @@ function Header() {
             <li>
               <NavLink
                 exact
-                activeClassName="active"
-                to="/"
+                
+                to="/dashboard"
                 className="nav-link scrollto"
               >
                 Dashboard
