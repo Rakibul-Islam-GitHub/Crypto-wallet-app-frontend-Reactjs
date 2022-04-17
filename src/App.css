@@ -2,8 +2,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 *{
-  font-family: 'Manrope';
+  font-family: 'Manrope', sans-serif;
 }
 body {
   background: #fff;
@@ -1628,3 +1629,6 @@ background-image: linear-gradient(0deg, #000000 0%, #10243e 100%); */
     align-items: center;
   }
 }
+
+
+/* responsive design for dashboard */

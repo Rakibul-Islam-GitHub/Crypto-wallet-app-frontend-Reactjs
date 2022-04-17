@@ -1,8 +1,8 @@
 .exchange-container{
-    flex:6;
-    padding:52px 0 0px 80px;
+    /* flex:6; */
+    padding: 35px 35px 0px 30px;
 }
-.exchange-container p{
+.swap{
     font-weight: 800;
 font-size: 36px;
 line-height: 49px;
@@ -42,8 +42,7 @@ margin: -5px 0 0 0 ;
 
 /* exchange card body */
 .exchange-card-body{
-max-width: 709px;
-max-height: 718px;
+
 background: #FFFFFF;
 box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
 border-radius: 10px;
@@ -52,8 +51,8 @@ margin-top: 20px;
 }
 
 .from-card, .to-card{
-    width: 241px;
-height: 152px;
+    /* width: 241px;
+height: 152px; */
 background: linear-gradient(90deg, #EF8E19 0%, #F99823 100%);
 box-shadow: 0px 15px 44px rgba(239, 142, 25, 0.35);
 border-radius: 12px;
@@ -63,7 +62,7 @@ border-radius: 12px;
 }
 .coin-name p{
 font-weight: 700;
-font-size: 28px;
+font-size: 1.75rem;
 line-height: 18px;
 color: #FFFFFF;
 margin-left:20px;
@@ -146,10 +145,11 @@ text-align: center;
 }
 .coin-value-div{
     margin-top: 25px;
+    padding-left: 10px;
 }
 .input-coin, .output-coin{
-    width: 241px;
-height: 70px;
+    /* width: 241px;
+height: 70px; */
 background: #FFFFFF;
 /* opacity: 0.3; */
 border: 2px solid rgba(0, 0, 0, 0.222);
@@ -159,8 +159,9 @@ border-radius: 10px;
     font-family: 'Manrope';
     font-weight: 800;
 font-size: 28px;
+
 color: #000000 !important;
-margin-top: 7px;
+
 }
 
 /* connect wallet btn div */
@@ -186,3 +187,10 @@ line-height: 27px;
 
 color: #FFFFFF;
 }
+
+
+
+/* mobile device media query */
+
+
+
