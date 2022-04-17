@@ -2,14 +2,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+*{
+  font-family: 'Manrope';
+}
 body {
   background: #fff;
   color: #444;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Manrope';
   /* width: 101%; */
   /* margin: 0 auto; */
   -ms-overflow-style: none; 
   scrollbar-width: none;  
+  overflow-x: hidden;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -31,13 +36,13 @@ a:hover, a:active, a:focus {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  /* margin: 0 0 30px 0; */
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0; */
   padding: 0;
 }
 
@@ -90,6 +95,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 90px;
   width: 100%;
   margin-right: 0%;
+  display: block;
+  overflow-x: hidden;
 }
 #header .header-div {
   margin: 0px auto;
@@ -167,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .navbar li {
-  position: relative;
+  /* position: relative; */
   margin: 0px 5px;
 }
 .navbar a, .navbar a:focus {
@@ -195,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .dropdown ul {
   display: block;
-  position: absolute;
+  /* position: absolute; */
   left: 24px;
   top: calc(100% + 30px);
   margin: 0;
@@ -1317,6 +1324,11 @@ background-image: linear-gradient(0deg, #000000 0%, #10243e 100%); */
 # Footer
 --------------------------------------------------------------*/
 
+#footer {
+  overflow-x: hidden !important;
+  overflow: hidden;
+  
+}
 .footer2 {
   flex-direction: row;
   align-items: center;

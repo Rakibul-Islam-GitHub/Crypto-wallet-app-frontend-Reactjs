@@ -2,7 +2,7 @@
     display: inline-block;
 }
 .dashboard-main{
-    min-height:200vh;
+    min-height:150vh;
     overflow-x: hidden !important;
   color: black;
   margin-top: 66px;

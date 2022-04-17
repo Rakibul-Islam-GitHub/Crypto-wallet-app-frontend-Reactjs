@@ -7,10 +7,12 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home";
 import Team from "./pages/team";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Exchange from "./pages/Dashboard/exchange/Exchange";
 
 function App() {
   useEffect(() => {
-    "use strict";
+    // "use strict";
 
     /**
      * Easy selector helper function
@@ -181,6 +183,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />}> </Route>
       <Route path="/team" element={<Team />}> </Route>
+      <Route path="/dashboard" element={<Dashboard/>}> </Route>
+      <Route path="/exchange" element={<Exchange/>}> </Route>
     </Routes>
   </BrowserRouter>
   );

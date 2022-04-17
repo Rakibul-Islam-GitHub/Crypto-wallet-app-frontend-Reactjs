@@ -152,21 +152,21 @@ const Dashboard = () => {
                 </li>
 
                 <li>
-                  <Link to="/dashboard" className="nav-link">
+                  <Link to="/exchange" className="nav-link">
                     <i class="bi bi-currency-exchange"></i>
                     Exchange
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/dashboard" className="nav-link">
+                  <Link to="/liquidity" className="nav-link">
                     <i class="bi bi-droplet-half"></i>
                     Liquidaty
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/dashboard" className="nav-link">
+                  <Link to="/farming" className="nav-link">
                     <i class="bi bi-graph-up"></i>
                     Farming
                   </Link>
