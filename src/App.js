@@ -9,6 +9,7 @@ import Home from "./pages/home";
 import Team from "./pages/team";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Exchange from "./pages/Dashboard/exchange/Exchange";
+import Liquidity from "./pages/Dashboard/liquidity/Liquidity";
 
 function App() {
   useEffect(() => {
@@ -185,6 +186,7 @@ function App() {
       <Route path="/team" element={<Team />}> </Route>
       <Route path="/dashboard" element={<Dashboard/>}> </Route>
       <Route path="/exchange" element={<Exchange/>}> </Route>
+      <Route path="/liquidity" element={<Liquidity/>}> </Route>
     </Routes>
   </BrowserRouter>
   );

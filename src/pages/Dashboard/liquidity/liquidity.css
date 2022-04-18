@@ -1,0 +1,19 @@
+.dashboard-main{
+    min-height:150vh;
+    overflow-x: hidden !important;
+  color: black;
+  margin-top: 66px;
+  display:flex;
+  background-color:#f5f5fb;
+    
+}
+.liquidity-container{
+    padding: 35px 35px 0px 30px;
+}
+.from-to-p{
+line-height: 3;
+}
+
+.coin-value-div{
+    margin-top:75px;
+}
