@@ -1,0 +1,90 @@
+.dashboard-main{
+    min-height:150vh;
+    overflow-x: hidden !important;
+  color: black;
+  margin-top: 66px;
+  display:flex;
+  background-color:#f5f5fb;
+    
+}
+.farming-container{
+    padding: 35px 35px 0px 30px;
+}
+
+/* farming table style */
+
+table{
+    font-size :16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+.table thead{
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border-bottom: none !important;
+    
+   
+}
+th{
+    padding-left: 10px;
+}
+thead{
+    border: none !important;
+}
+.table thead th:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+  .table thead  th:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .table tbody tr:first-of-type {
+    border-top: 2px solid #ffffff;
+  }
+
+  .table tbody tr:nth-of-type(odd) {
+    background-color: inherit;
+    border-radius: 10px 10px 0 10px;
+
+  }
+
+  .coinicon-lq{
+      margin-right: 3px;
+  }
+  
+  .farming-table-container{
+      background-color: #ffffff;
+      padding: 15px 15px;
+  }
+
+  /* btn & search div style */
+  .search-input{
+    background: rgba(21, 101, 216, 0.05);
+border: 1px solid #1565D8;
+box-sizing: border-box;
+border-radius: 10px;
+font-size: 16px;
+padding-left: 15px;
+width:80%;
+  }
+  .search-field-farm{
+    position: relative;
+  }
+
+  .search-btn{
+    position: absolute;
+    right: 25px;
+    top: 7px;
+    width: 40px;
+height: 40px;
+background: #FFFFFF;
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+border-radius: 6px;
+  }
+  .search-btn i {
+    font-size: 26px;
+    position: absolute;
+    right: 4px;
+    top: -5px;
+}
+  
