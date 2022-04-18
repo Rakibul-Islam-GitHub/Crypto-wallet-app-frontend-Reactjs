@@ -36,8 +36,8 @@ const Farming = () => {
               </div> 
 
 
-              <div className="search-field-farm  col-md-6">
-                    <input className="float-end search-input" placeholder="Search Farms..." type="text" />
+              <div className="search-field-farm  col-lg-6 col-sm-10 mt-sm-3 mt-lg-0">
+                    <input className="float-lg-end search-input" placeholder="Search Farms..." type="text" />
                     <button className="search-btn"><i class="bi bi-search"></i></button>
                 </div>
 
@@ -55,7 +55,7 @@ const Farming = () => {
             } */}
             {isActive==='active' ?
             //   here farming will be render since the selected tab is active
-            <div className="farming-table-container mt-3 col-md-10 table-responsive-sm">
+            <div className="farming-table-container mt-3 col-md-12 col-lg-10 table-responsive-sm">
 
             <table class="table table-striped">
                   <thead className="">

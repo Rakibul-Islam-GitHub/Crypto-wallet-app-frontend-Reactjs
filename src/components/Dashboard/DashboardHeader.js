@@ -31,14 +31,16 @@ const DashboardHeader = () => {
                     exact
                     
                     to="/dashboard"
-                    className="nav-link scrollto"
+                    className="nav-link active scrollto"
+                    
                   >
                       <img src="https://cdn-icons.flaticon.com/png/512/706/premium/706807.png?token=exp=1650104216~hmac=2d9b0e4934522a4a8efc692ae3805b3e" alt="" height='20px' width='20px' style={{marginRight:'5px'}}/>
                     Username
+                    <i class="bi bi-chevron-down"></i>
                   </NavLink>
                 </li>
               </ul>
-              <i className="bi bi-list mobile-nav-toggle"></i>
+              
             </nav>
           </div>
         </header>

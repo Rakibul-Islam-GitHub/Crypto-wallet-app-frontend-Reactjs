@@ -28,7 +28,7 @@ const Exchange = () => {
               <div className="exchange-header swap">
                     <p className="swap">Swap</p>
                     <div className="btn-div">
-                        <button className="btn-mrkt"> <p>Market</p> </button>
+                        <button className="btn-mrkt active"> <p>Market</p> </button>
                         <button className=" btn-lmt"> <p>Limit</p> </button>
 
                     </div>
