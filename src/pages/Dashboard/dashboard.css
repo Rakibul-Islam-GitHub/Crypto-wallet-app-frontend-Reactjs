@@ -55,6 +55,12 @@ ul.sidebar-items li:hover a{
     color:white !important;
     
 }
+.menu-active{
+    color:white !important;
+    background-color:rgb(30, 80, 217);
+    border-radius: 10px;
+    
+}
 /* .sidebar-items li a:hover{
     color:white !important;
     background-color:rgb(30, 80, 217);
@@ -340,7 +346,26 @@ line-height: 18px;
 color: #000000;
 opacity: 0.6;
 }
+.pei{
+    height: 60%;
+}
+.pei-ust{
+    font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+color: #000000;
+}
+.total-diposit-pei{
+    font-weight: 700;
+font-size: 13px !important;
 
+}
+.pei-muted{
+    font-weight: 600;
+font-size: 10px;
+color: #000000;
+opacity: 0.4;
+}
 
 /* responsive design */
 
@@ -404,11 +429,99 @@ opacity: 0.6;
 
     }
 
+    /* dashboard */
+    .bitx-p-row2-right.div-bc.col-md-4 {
+        margin-top: 20px;
+    }
+    .bitx-platform-piechart.col-md-4 {
+        margin-top: 20px;
+    }
+    .bitx-platform-piechart.col-md-4 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .pei {
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .bitx-p-row2-chart-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .bitx-platform {
+        margin-top: 15px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .wallet-table {
+        padding: 5px;
+        margin: 5px;
+    }
+    .portfolio {
+       
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .account-section {
+        padding: 4px;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .account h5, .portfolio h5 {
+        font-weight: 800;
+        
+        font-size: 30px;
+    }
+    .account-card strong {
+        font-size: 2.5rem !important;
+    }
+    .account-card p {
+        font-size: 16px;
+    }
+    .bitx-p-row2 {
+        margin: 5px;
+        margin-bottom:30px;
+        
+    }
+    .bitx-platform-piechart {
+        margin-top: 30px;
+    }
+    .stablecoin-table-container {
+        padding: 0px;
+        margin-left: 5px !important;
+        margin-top: 10px;
+    }
+    .last-chart-container {
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+    .collarate-market-table-container {
+        margin-left: 0px;
+        margin-top: 40px;
+      
+    }
+    .collarate-market-table-container table{
+        font-size:12px;
+    }
+    .btn-div {
+        width: 350px;
+        
+    }
+
 
     }
 
 @media (max-width:991px){
     .output-coin{
         margin-top:25px;
+    }
+    .bitx-platform-piechart {
+        margin-top: 30px;
+    }
+    .bitx-p-row2-right.div-bc.col-lg-4 {
+        margin-top: 30px;
     }
 }

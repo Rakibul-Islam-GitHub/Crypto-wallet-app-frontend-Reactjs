@@ -2,15 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../pages/Dashboard/dashboard.css"
 
-const Sidebar = () => {
+const Sidebar = ({activeMenu}) => {
     return (
         <>
         <div className="sidebar col-md-3">
             <div className="sidebar2">
               <ul className="sidebar-items sidebar-wrapper">
-                <li>
+                <li className="">
                   <Link
                     // activeClassName="active"
+                    
 
                     to="/dashboard"
                     className="nav-link"

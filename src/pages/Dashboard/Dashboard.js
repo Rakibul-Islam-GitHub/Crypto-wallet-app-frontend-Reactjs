@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
 import Chart from "../../components/Dashboard/Chart";
 import DashboardHeader from '../../components/Dashboard/DashboardHeader';
+import Piechart from "../../components/Dashboard/Piechart";
+import Sidebar from "../../components/Dashboard/Sidebar";
 import Footer from '../../components/Footer';
 import './dashboard.css';
+
 
 const Dashboard = () => {
 
@@ -109,49 +111,16 @@ const Dashboard = () => {
         <div className="header-container">
           <DashboardHeader />
         </div>
-        <div className="dashboard-main">
+        <div className="dashboard-main row col-md-12">
+
+
           {/* this is sidebar of dashboard */}
-          <div className="sidebar">
-            <div className="sidebar2">
-              <ul className="sidebar-items sidebar-wrapper">
-                <li>
-                  <Link
-                    // activeClassName="active"
-
-                    to="/dashboard"
-                    className="nav-link"
-                  >
-                    <i className="bi bi-menu-app"></i>
-                    Dashboard
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/exchange" className="nav-link">
-                    <i class="bi bi-currency-exchange"></i>
-                    Exchange
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/liquidity" className="nav-link">
-                    <i class="bi bi-droplet-half"></i>
-                    Liquidaty
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/farming" className="nav-link">
-                    <i class="bi bi-graph-up"></i>
-                    Farming
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <Sidebar activeMenu='dashboard'/>
+          
+          
 
           {/* this is dashboard contents */}
-          <div className="dashboard-item">
+          <div className="dashboard-item col-md-9">
             <div className="account-section row">
               <div className="account col-md-4">
                 <h5>Accounts</h5>
@@ -164,7 +133,7 @@ const Dashboard = () => {
                   <div className="account-card-circle3"></div>
                 </div>
               </div>
-              <div className="portfolio col-md-7">
+              <div className="portfolio col-md-8 col-lg-7">
                 <h5>My Portfolio</h5>
                 <div className="portfolio-chart">
                   <Chart></Chart>
@@ -227,12 +196,12 @@ const Dashboard = () => {
 
 
             {/* bitx platform start */}
-            <div className="bitx-platform row col-md-11">
+            <div className="bitx-platform row col-sm-12 col-xl-11">
                 <p>BitX Platform</p>
 
                 
 
-                    <div className="bitx-platform-chart col-md-7">
+                    <div className="bitx-platform-chart col-xl-7">
                         <div className="chart-header">
                             <div className="chart-header-left">
                                 <h6>$2.62 <span className="chartspan">UST</span> </h6>
@@ -242,17 +211,29 @@ const Dashboard = () => {
                         </div>
                     <Chart></Chart>
                     </div>
-                    <div className="bitx-platform-piechart col-md-4">
+                    <div className="bitx-platform-piechart col-xl-4">
 
-                        pie chart
+                        <div className="pei">
+                          <Piechart></Piechart>
+                        </div>
+                        <p className="text-center pei-ust">18,430,942,163 UST</p>
+                        <div className="bitx-p-row2-chart-header">
+                        <img src={require('../../assets/img/dashboard/bluebar2.png')} height="41px" alt="" />
+                        <h6 className="total-diposit-pei me-1">12,007,738,396  UST  <br/> <span className="pei-muted">Total Diposit</span> </h6> 
+                        
+
+                        <img src={require('../../assets/img/dashboard/blackbar.png')} height="41px" alt="" />
+                        <h6 className="total-diposit-pei">12,007,738,396 UST   <br/> <span className="pei-muted"> Total Collerate</span> </h6>
+                        
+                    </div>
                     </div>
                 
             </div>
             {/* bitx platform end */}
 
             {/* bitx platform 2nd row start */}
-            <div className="bitx-p-row2 row col-md-11">
-                <div className="bitx-p-row2-chart div-bc col-md-7">
+            <div className="bitx-p-row2 row col-md-12 col-lg-11">
+                <div className="bitx-p-row2-chart div-bc col-lg-7">
                     <div className="bitx-p-row2-chart-header">
                         <img src={require('../../assets/img/dashboard/bluebar.png')} height="51px" alt="" />
                         <h6 className="total-diposit">12,007,738,396  UST  <span className="total-diposit-monitor-green"> +5.13%</span><br/> <span className="t-d-b">Total Diposit</span> </h6> 
@@ -267,7 +248,7 @@ const Dashboard = () => {
                         <Chart></Chart>
                     </div>
                 </div>
-                <div className="bitx-p-row2-right div-bc col-md-4">
+                <div className="bitx-p-row2-right div-bc col-lg-4">
                     <p className="pt-3 pb-0 mb-0 anc-buyback">ANC Buyback (72HR)</p>
                     <div className=" d-flex flex-row ">
                         <p className="anc me-4">118,321 <span className="ancust">ANC</span> </p>
